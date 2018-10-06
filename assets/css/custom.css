@@ -1,0 +1,63 @@
+html {
+    font-size: 75%;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.jumbotron {
+    background-image: url(../img/landing.jpeg);
+    background-size: cover;
+    background-position: top;
+    color: #fff;
+    font-weight: bold;
+}
+
+#container-jumbo {
+    margin-top: 6rem;
+}
+
+h1.display-4 {
+    font-size: 4rem;
+}
+
+p.lead {
+    font-size: 2rem;
+}
+
+.jumbotron a {
+    font-size: 1.5rem;
+}
+
+#container-top-tracks {
+    margin-top: 4rem;
+}
+
+#container-top-tracks h4 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+
+#user-text {
+    margin-top: 3rem;
+}
+
+.card {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+#search-btn {
+    color: white;
+}
+
+.heading-text {
+    color: #fff;
+}

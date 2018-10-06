@@ -1,0 +1,11 @@
+{
+  "name": "lyric_app",
+  "version": "1.0.0",
+  "description": "A lyric fetcher.",
+  "main": "app.js",
+  "scripts": {
+    
+  },
+  "author": "Sabeel Ahmad",
+  "license": "ISC"
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/icon.png">
+    <title>Music App | Know about treding tracks, artists and much more</title>
+</head>
+<body>
+    <div class="container" id="container-jumbo">
+        <div class="jumbotron">
+            <h1 class="display-4">The Music App</h1>
+            <p class="lead">Want to know about trending music, aritsts? Get the lyrics to the most trending songs with a click?
+                You just reached the correct place!</p>
+            <a href="#" class="btn btn-primary btn-lg">Begin exploring</a>
+        </div>
+    </div>
+
+    <div class="container" id="container-top-tracks">
+        <h4>Search for trending music</h4>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="type-chart">Chart</label>
+            </div>
+            <select class="custom-select" id="type-chart">
+              <option selected>Filter your music search...</option>
+              <option value="top">Top Charts</option>
+              <option value="hot">Hot Charts</option>
+              <option value="mxmweekly">Best of the Week</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label for="country" class="input-group-text">Country</label>
+            </div>
+            <select class="custom-select" id="country">
+                <option selected>Select Country...</option>
+                <option value="us">United States of America</option>
+                <option value="uk">United Kingdom</option>
+                <option value="in">India</option>
+                <option value="it">Italy</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label for="page-size" class="input-group-text">Results</label>
+            </div>
+            <input type="number" class="form-control" placeholder="Number of results wanted (1-100)..." min="0" max="100" step="5" id="page-size">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="search-btn">Find Music</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <span class="heading-text"></span>
+        <div class="row" id="top-tracks-result">
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <span class="text-right cpy"></span>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/api.js"></script>
+    <script class="tracking-url"></script>
+</body>
+</html>
