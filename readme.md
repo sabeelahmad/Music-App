@@ -22,4 +22,6 @@ The code uses a Free API Key and hence the *track.lyrics.get* method only return
 
 The design of the site has been kept pretty minimalistic by me, as I mainly wanted to this as a small project particulary to make a project demonstrating AJAX using Vanilla JS.
 
+#### The Request to the API may fail due to CORS, Please make sure you have some kind of CORS extension added to your browser.
+
 Anyone may contribute to the project, if they feel that they can make the code better or add any other feature.
