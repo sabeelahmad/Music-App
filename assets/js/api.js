@@ -34,7 +34,7 @@ function loadData() {
 
     // Make request
     let xhr = new XMLHttpRequest();
-    let reqUrl = `http://api.musixmatch.com/ws/1.1/chart.tracks.get?apikey=ebdf7abb4b38a5c5748f1ef88b6bce25&page_size=${resSize.value}&country=${country.value}&chart_name=${chart.value}`;
+    let reqUrl = `https://api.musixmatch.com/ws/1.1/chart.tracks.get?apikey=ebdf7abb4b38a5c5748f1ef88b6bce25&page_size=${resSize.value}&country=${country.value}&chart_name=${chart.value}`;
     xhr.open('GET', reqUrl, true);
 
     xhr.onload = function() {
@@ -81,7 +81,7 @@ function loadData() {
             let btnid = this.getAttribute('id');
             // Make AJAX request to MusixMatch API
             let xhr = new XMLHttpRequest();
-            let LyricURL = `http://api.musixmatch.com/ws/1.1/track.lyrics.get?apikey=ebdf7abb4b38a5c5748f1ef88b6bce25&track_id=${trackIDArr[btnid]}` ;
+            let LyricURL = `https://api.musixmatch.com/ws/1.1/track.lyrics.get?apikey=ebdf7abb4b38a5c5748f1ef88b6bce25&track_id=${trackIDArr[btnid]}` ;
             xhr.open('GET', LyricURL, true);
 
             xhr.onload = function() {
